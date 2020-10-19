@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url(assets/freedom.jpg);
   background-repeat: no-repeat;
@@ -8,6 +12,18 @@ body {
   text-align: center;
   margin: 0;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Julius Sans One', sans-serif;
+  border-bottom: 1px solid #ffffff;
+}
+
+a:hover {
+  color: #555555;
+  border-bottom: 1px solid #555555;
 }
 
 .wrapper {
@@ -27,4 +43,62 @@ small {
   font-family: 'Crimson Text', serif;
   font-style: italic;
   font-size: 1.3rem;
+}
+
+footer {
+  letter-spacing: .2rem;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background: #000000;
+  width: 100%;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 1rem; 
+}
+
+@media only screen and (max-width: 768px) {
+
+
+  .wrapper {
+    padding-top: 8rem;
+  }
+
+  .principal {
+    font-size: 1.25rem;
+    line-height: 1.9rem
+  }
+
+  small {
+    font-size: .8rem;
+  }
+  
+  footer li {
+    font-size: .8rem;
+    margin: 0;
+  }
+
+}
+
+@media only screen and (min-width: 1730px) {
+
+  .wrapper {
+    padding-top: 12rem;
+  }
+
+  .principal {
+    font-size: 3rem;
+  }
+
+  small {
+    font-size: 1.5rem;
+  }
+
 }
